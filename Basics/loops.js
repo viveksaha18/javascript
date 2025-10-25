@@ -11,6 +11,6 @@ while(i < 5) {
 // do while
 let y = 0;
 do {
-    console.log("Even If the condition is wrong it will print once");
+    console.log("Do While Loop Even If the condition is wrong it will print once");
     y++;
 }while(y>5);

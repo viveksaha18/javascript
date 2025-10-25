@@ -9,5 +9,5 @@ if(5 > 3 || 2 > 5) {
 }
 
 // Logical NOT Operator !
-let age = !(5>3);
-console.log(age);
+let age = !(5>3);  // 5 > 3 true but !true which gives false
+console.log(age);  // age is false
