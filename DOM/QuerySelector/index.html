@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="block">
+        <p class="paragraph">Welcome to my Website</p>
+    </nav>
+    <div class="block">
+        <h4>Hey There, My name is <span id="username">Vivek Saha</span></h4>
+        <pre><code>console.log('Hey, There')</code></pre>
+    </div>
+
+
+    <script>
+        /**
+         * Query Selector
+         * By tag name
+         * By id -> #
+         * By class name -> .
+        **/
+
+        // BY TAG NAME
+        const navComponent = document.querySelector("nav")
+        console.log(navComponent.innerText)
+        navComponent.innerHTML = "Hi, I am nav Component"
+
+        // BY ID NAME
+        const username = document.querySelector("#username")
+        console.log(username.innerText)
+        username.innerHTML = "<p>Hacked!</p>"
+        //username.innerText = "<p>hii</p>"
+
+        // BY CLASS NAME
+        const byClassName = document.querySelector('.block')
+        console.log(byClassName)
+        byClassName.innerHTML = "I am VIVEK"
+
+        // Difference between queryselector and queryselectorall 
+        // querySelector()-> gives the first match
+        // querySelector()-> gives all matches
+        
+
+    </script>
+</body>
+</html>
