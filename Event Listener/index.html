@@ -14,6 +14,10 @@
         <pre><code>console.log('Hey, There')</code></pre>
     </div>
     
+
+    <div id = 'container'>
+
+    </div>
     <!-- <button onclick="console.log('I am Clicked')">Click Me!</button> -->
 
     <!-- <button onclick="handleClick()">Click Me!</button> -->
@@ -48,7 +52,15 @@
         //     })
         // }
 
-        
+
+        // Creating dynamical elements
+        const clicked = document.getElementById('click')
+        const container = document.getElementById('container')
+        clicked.addEventListener('click', () => {
+            const add = document.createElement('h1')
+            add.innerText = 'VIVEK'
+            container.appendChild(add)
+        })
     </script>
     
 </body>
