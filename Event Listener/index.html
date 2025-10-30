@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="block">
+        <p class="paragraph">Welcome to my Website</p>
+    </nav>
+    <div class="block">
+        <h4>Hey There, My name is <span id="username">Vivek Saha</span></h4>
+        <pre><code>console.log('Hey, There')</code></pre>
+    </div>
+    
+    <!-- <button onclick="console.log('I am Clicked')">Click Me!</button> -->
+
+    <!-- <button onclick="handleClick()">Click Me!</button> -->
+     <button id = 'click'>Click Me</button>
+    <script>
+    // Event Listener : An Event Listener in JavaScript is a function that waits for a specific event (like a click, keypress, or mouse movement) to occur on an HTML element and then executes a block of code in response to that event.
+        // function handleClick() {
+        //     console.log('I am Clicked')
+        // }
+
+        // We must use like this 
+        // Use addEventListener("event", callbackfunction)
+        const clickElement = document.getElementById('click')
+        console.log(clickElement)
+        clickElement.addEventListener("click",  () => {
+            console.log('I am clicked')
+        })
+
+        const username = document.getElementById('username')
+        console.log(username)
+        username.addEventListener("click", () => {
+            username.style.color = 'red'
+        })
+
+        // Removing the body content 
+        // const allChildren = document.body.children
+        // console.log(allChildren)
+        // for(let i = 0; i < allChildren.length; i++) {
+        //     const val = allChildren[i];
+        //     val.addEventListener("click", () => {
+        //         val.remove()
+        //     })
+        // }
+
+        
+    </script>
+    
+</body>
+</html>
