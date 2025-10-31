@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id='city-name' type="text" placeholder="Enter the city name">
+    <br>
+    <button id="city-search">Search</button>
+    <br>
+    <h3 id="name">City Name</h3>
+    <h2 id = 'region'>Region</h2>
+    <h4 id="humidity">Humidity</h4>
+</body>
+
+
+<script>
+const cityName = document.getElementById('city-name')
+const search = document.getElementById('city-search')
+const name = document.getElementById('name')
+const region = document.getElementById('region')
+const humidity = document.getElementById('humidity')
+async function getData(city) {
+    const result = await fetch(`https://api.weatherapi.com/v1/current.json?key=d438e3a6f080475e871152604253110&q=${city}&aqi=no`)
+    return await result.json();
+}
+search.addEventListener('click', async() => {
+    const city = cityName.value
+    const result = await getData(city)
+    console.log(result)
+    //console.log(result.location.name)
+    name.innerText = result.location.name
+    region.innerText = result.location.region
+    humidity.innerText = result.current.humidity
+})
+</script>
+</html>
