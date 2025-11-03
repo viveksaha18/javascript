@@ -31,10 +31,10 @@ console.log(x)
 //console.log(y) -> gives y is not defined
 //console.log(z) -> gives z is not defined
 
-// But var obeys this in function while function destroys you cannot access the variables declared inside the function var
+// But var obeys this in function while function destroys you cannot access the variables declared inside the function var but works inside the function 
 function explaningFunctionScope() {
     var p = 30
     console.log('Explaining Function Scope')
 }
 explaningFunctionScope()
-console.log(p)
+console.log(p) // p is not defined
