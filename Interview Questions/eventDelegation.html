@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id ='ul'>
+        <li>Vivek</li>
+        <li>Saha</li>
+        <li>Akash kumar Pati</li>
+    </ul>
+
+    <script>
+
+        /* 
+        Event Delegation = Instead of adding event listeners to each child element, we attach a single listener to the parent element, and then use properties like event.target, tagName, id, or classList to identify which child element triggered the event.
+        */
+        const ul = document.getElementById('ul')
+        ul.addEventListener('click', (e) => { // e is the event object 
+
+            console.log(e.target) // to know which element is clicked
+            console.log(e.target.tagName) // to know the tag name of clicked element
+            if(e.target.tagName === 'LI'){
+                alert('I am Clicked ' + e.target.innerText)
+            }
+        })
+    </script>
+</body>
+</html>
