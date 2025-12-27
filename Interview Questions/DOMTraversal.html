@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="root">
+  <div>
+    <p>
+      <span>
+        <button>Click me</button>
+      </span>
+    </p>
+  </div>
+</div>
+    <script>
+        // Traversal in DOM to get the path from button to root
+    const target = document.querySelector('button');
+    const root = document.getElementById('root');
+    let current = target;
+    const path = [];
+    while(current && current !== root) {
+        path.push(current.tagName.toLowerCase());
+        current = current.parentElement;
+    }
+    path.reverse();
+    path.join(' > ');
+    console.log(path);
+    </script>
+</body>
+
+</html>
