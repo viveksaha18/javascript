@@ -1,0 +1,84 @@
+📌 Problem Statement
+
+Create a search box that filters a list of items as the user types.
+
+Requirements
+
+You are given a list of strings (names).
+
+When the user types in the input box:
+
+Filter the list based on the search term
+
+Matching should be case-insensitive
+
+Implement debouncing (300ms) so filtering doesn’t happen on every keystroke.
+
+Highlight the matching part of the text.
+
+If no results are found, show:
+👉 "No results found"
+
+If the input is empty, show all items.
+
+🧪 Sample Data
+const items = [
+  "JavaScript",
+  "Java",
+  "Python",
+  "C++",
+  "React",
+  "NodeJS",
+  "Machine Learning",
+  "Frontend Developer",
+  "Backend Developer"
+];
+
+🖥 UI Expectations (Simple)
+
+One input box
+
+One list below it
+
+👉 Styling is NOT important, functionality is.
+
+🧩 Constraints
+
+❌ No frameworks (React not allowed)
+
+✅ Pure HTML, CSS, JS
+
+❌ No libraries
+
+✅ Clean JS functions
+
+🔍 Edge Cases to Handle
+
+Extra spaces in input
+
+Upper/lowercase differences
+
+Empty input
+
+Fast typing
+
+🧠 What Interviewers Will Look For
+
+Debounce implementation
+
+DOM updates
+
+Clean JS logic
+
+Separation of concerns
+
+Readable variable names
+
+✅ Expected Output Example
+
+Input: ja
+Output:
+
+JavaScript
+
+Java
