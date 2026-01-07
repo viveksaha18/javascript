@@ -27,6 +27,22 @@ function renderList(data) {
 renderList(items);
 
 const input = document.getElementById('searchInput');
-input.addEventListener('input', () => {
-    console.log(input.value);
-})
+function handleSearch() {
+    const search = input.value.trim().toLowerCase();
+    if(search === '') {
+        renderList(items);
+        return;
+    }
+    const filteredItems = items.filter(item => item.toLowerCase().includes(search));
+    renderList(filteredItems);
+}
+function debounce(fn, delay) {
+    let timer;
+    return function() {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            fn.apply(this, arguments);
+        }, delay);
+    }
+}
+input.addEventListener("input", debounce(handleSearch, 500));
