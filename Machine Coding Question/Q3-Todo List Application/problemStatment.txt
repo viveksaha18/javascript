@@ -1,0 +1,73 @@
+📌 TODO LIST APPLICATION
+⏱ Time: 60 minutes
+🛠 Tech Stack: HTML, CSS, JavaScript (No frameworks)
+🧾 PROBLEM STATEMENT (INTERVIEW STYLE)
+
+You are required to build a Todo List application that allows users to manage their daily tasks.
+
+🔹 FUNCTIONAL REQUIREMENTS
+
+The application should have an input field where users can type a todo task.
+
+There should be an “Add” button to add the task to the list.
+
+When a task is added:
+
+It should appear below the input field in a list.
+
+Each todo item should have:
+
+A checkbox to mark it as completed.
+
+A delete button to remove the todo.
+
+When a todo is marked as completed:
+
+The text should appear crossed out (line-through).
+
+Empty or whitespace-only todos must not be added.
+
+🔹 NON-FUNCTIONAL REQUIREMENTS
+
+The UI can be simple (no need for fancy styling).
+
+Code should be clean and readable.
+
+Do not use any JavaScript frameworks or libraries.
+
+The solution should work in all modern browsers.
+
+🔹 OPTIONAL (BONUS – NOT MANDATORY)
+
+Clear input after adding a todo.
+
+Pressing Enter should also add a todo.
+
+Maintain todo list order.
+
+🧠 WHAT INTERVIEWERS ARE TESTING
+
+Can you manage state properly?
+
+Can you handle DOM updates cleanly?
+
+Do you understand event handling?
+
+Can you write maintainable code?
+
+🎯 EXPECTED OUTPUT (VISUAL IDEA)
+[ Enter your todo here ] [ Add ]
+
+☐ Learn JavaScript      ❌
+☑ Build Todo App        ❌
+☐ Apply for Internship ❌
+
+🚫 CONSTRAINTS
+
+No backend
+
+No database
+
+No frameworks
+
+Pure HTML, CSS, JS only
