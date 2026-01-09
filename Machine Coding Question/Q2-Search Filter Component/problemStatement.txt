@@ -1,0 +1,22 @@
+🧾 Problem Statement (Interview Style)
+
+You are given:
+
+An input box
+
+A list of items (strings)
+
+Requirement:
+
+As the user types in the input box, filter the list
+
+Matching should be case-insensitive
+
+Show only matching items
+
+If no item matches, show “No results found”
+
+No frameworks.
+Use HTML, CSS, JavaScript only.
+
+⏱️ Time: 60 minutes
