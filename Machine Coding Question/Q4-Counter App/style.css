@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#initial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#add {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border : solid black 2px;
+}
+#subtract {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border : solid black 2px;
+}
+#reset {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border : solid black 2px;
+}
