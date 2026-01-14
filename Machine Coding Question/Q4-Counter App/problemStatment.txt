@@ -1,0 +1,19 @@
+📌 Problem: Counter App
+
+This is one of the simplest but interview-relevant problems.
+
+🧾 Full Problem Statement
+
+Build a Counter Application using HTML, CSS, and JavaScript.
+
+Requirements:
+
+Show a number on the screen (initially 0)
+
+A + button increases the number by 1
+
+A − button decreases the number by 1
+
+A Reset button sets the number back to 0
+
+The number should never go below 0
