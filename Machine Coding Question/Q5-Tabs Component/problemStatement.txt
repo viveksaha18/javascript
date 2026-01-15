@@ -1,0 +1,97 @@
+🧩 Problem Statement: Tabs Component
+📌 Description
+
+You are required to build a Tabs Component using HTML, CSS, and JavaScript.
+
+A tabs component allows users to switch between different sections of content without reloading the page.
+
+🎯 Requirements
+
+The page should contain three tabs:
+
+Tab 1
+
+Tab 2
+
+Tab 3
+
+Each tab should have its own content section:
+
+Content of Tab 1
+
+Content of Tab 2
+
+Content of Tab 3
+
+Only one tab’s content should be visible at a time.
+
+When the user clicks on:
+
+Tab 1 → Show content of Tab 1
+
+Tab 2 → Show content of Tab 2
+
+Tab 3 → Show content of Tab 3
+
+The tab switch should happen without page reload.
+
+By default:
+
+Tab 1 should be active
+
+Content of Tab 1 should be visible
+
+❌ Constraints
+
+Do not navigate to another page.
+
+Do not refresh the page.
+
+Do not use any external libraries or frameworks.
+
+🛠 Tech Stack
+
+HTML
+
+CSS (optional but recommended)
+
+JavaScript (Vanilla JS only)
+
+📈 Bonus (Optional – Not mandatory)
+
+Highlight the active tab
+
+Add basic styling for tabs
+
+Make the solution reusable
+
+🧠 What the interviewer checks
+
+DOM selection (getElementById, querySelector)
+
+Event handling (addEventListener)
+
+Show/hide logic
+
+Clean and readable code
+
+Understanding of UI state
+
+✅ Expected Outcome
+
+Clicking on a tab updates the visible content instantly on the same page.
+
+⭐ Difficulty Level
+
+Easy (Beginner-friendly)
+Perfect for building confidence in machine coding rounds.
+
+If you want, next we can:
+
+🔹 Dry run the logic
+
+🔹 Optimize code (clean version)
+
+🔹 Add active tab UI (real interview touch)
+
+Just tell me 👍

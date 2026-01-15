@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#content1, #content2, #content3{
+    margin-top: 20px;
+}
+#butt1, #butt2, #butt3{
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
