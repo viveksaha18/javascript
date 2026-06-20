@@ -19,3 +19,11 @@ var x = 10; // var gives you undefined
 
 console.log(y);
 let y = 10;
+
+// Redeclare run fine but x becomes 30
+var x = 20;
+var x = 30;
+
+// Give an error as using let you cannot redeclare the variable
+let z = 9;
+let z = 10;
