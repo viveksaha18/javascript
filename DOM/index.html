@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        /* Element selector   */
+        body {
+            background-color: aquamarine;
+            margin-left: 550px;
+            margin-right: 550px;
+            margin-top: 100px;
+        }
+
+        /* Id selector */
+        #myId {
+            font-size: 22px;
+            /* color: red; */
+        }
+
+        /* class selector */
+        .myClass {
+            height: 28px;
+            width: 220px;
+        }
+
+        /* Groupselector */
+        h1,
+        p,
+        i,
+        b {
+            color: blue;
+        }
+
+        /* Universal selector */
+        * {
+            font-family: Arial, sans-serif;
+            color: green;
+        }
+    </style>
+    <script>
+        function Validation() {
+            debugger;
+            var name = document.getElementById("TxtName").value;
+            if (name == null || name == "") {
+                alert("Please Enter User Name");
+                return false;
+            }
+            var password = document.getElementById("TxtPassword").value;
+            if (password == null || password == "") {
+                alert("Please Enter Password");
+                return false;
+            }
+            var confirmPassword = document.getElementById("TxtCPassword").value;
+            if (password != confirmPassword) {
+                alert("Passwords do not match");
+                return false;
+            }
+            var address = document.getElementById("TxtAddress").value;
+            if (address == null || address == "") {
+                alert("Please Enter Address");
+                return false;
+            }
+            var emailId = document.getElementById("TxtEmail").value;
+            if (emailId == null || emailId == "") {
+                alert("Please Enter Email Id");
+                return false;
+            }
+            var atpos = emailId.indexOf("@");
+            var dotpos = emailId.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailId.length) {
+                alert("Please Enter Valid Email Id");
+                return false;
+            }
+            var phone = document.getElementById("TxtPhone").value;
+            if (phone == null || phone == "" || isNaN(phone) || phone.length != 10) {
+                alert("Please Enter Phone Number with 10 digits");
+                return false;
+            }
+            var age = document.getElementById("TxtAge").value;
+            if (age == null || age == "") {
+                alert("Please Enter Age");
+                return false;
+            }
+            if (isNaN(age) || age < 0 || age > 120) {
+                alert("Please Enter Valid Age");
+                return false;
+            }
+            var radio = document.getElementsByName("Gender");
+            let cnt = 0;
+            for (var i = 0; i < radio.length; i++) {
+                if (radio[i].checked) {
+                    cnt+=1;
+                }
+            }
+            if(cnt == 1) {
+                alert("Form is Submitted");
+                return true;
+            }
+            else {
+                alert("Check mark the radio button..");
+                return true;
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <div>
+            <div>
+                <h1>Registration Form</h1>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <label id="myId">User Name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="TxtName" class="myClass" name="username"
+                                placeholder="Enter User name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="myId">Password</label>
+                        </td>
+                        <td>
+                            <input type="password" Id="TxtPassword" class="myClass" name="Password"
+                                placeholder="Enter password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="myId">Confirm Password</label>
+                        </td>
+                        <td>
+                            <input type="password" id="TxtCPassword" class="myClass" name="Cpassword"
+                                placeholder="Retype password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="myId">Address</label>
+                        </td>
+                        <td>
+                            <input type="text" id="TxtAddress" class="myClass" name="Address"
+                                placeholder="Enter Address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="myId">EmailId</label>
+                        </td>
+                        <td>
+                            <input type="text" id="TxtEmail" class="myClass" name="EmailId" placeholder="Enter EmailId">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="myId">PhoneNo</label>
+                        </td>
+                        <td>
+                            <input type="text" id="TxtPhone" class="myClass" name="PhoneNo" placeholder="Enter PhoneNo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="myId">Age</label>
+                        </td>
+                        <td>
+                            <select name="Age" id="TxtAge" class="myClass">
+                                <option value="">--Select Your Age--</option>
+                                <option value="20">20</option>
+                                <option value="20">20</option>
+                                <option value="20">20</option>
+                                <option value="20">20</option>
+                                <option value="20">20</option>
+                                <option value="20">20</option>
+                                <option value="20">20</option>
+                                <option value="20">20</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="myId">Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="Gender" value="Male"> Male
+                            <input type="radio" name="Gender" value="Female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="myId">Company Name</label>
+                        </td>
+                        <td>
+                            <select name="Company Name" id="TxtCompany" class="myClass">
+                                <option value="">--Select Your Company Name--</option>
+                                <option value="TCS">TCS</option>
+                                <option value="CTS">CTS</option>
+                                <option value="Wipro">Wipro</option>
+                                <option value="Infosys">Infosys</option>
+                                <option value="HCL">HCL</option>
+                                <option value="Tech Mahindra">Tech Mahindra</option>
+                                <option value="IBM">IBM</option>
+                                <option value="Accenture">Accenture</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="myId">Salary</label>
+                        </td>
+                        <td>
+                            <input type="text" id="TxtSalary" class="myClass" name="Salary" placeholder="Enter Salary">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Submit" onclick="return Validation()">
+                            <input type="reset" value="Reset">
+                            <input type="submit" value="Cancel">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
